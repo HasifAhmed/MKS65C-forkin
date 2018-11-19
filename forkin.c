@@ -1,10 +1,11 @@
-#include <stdio.h> //printf()
+#include <stdio.h> //printf() 
 #include <unistd.h> //fork() getpid() getppid() close() read()
 #include <sys/types.h> //getpid() getppid()
 #include <sys/wait.h> //wait() waitpid()
 #include <fcntl.h> //open()
 #include <stdlib.h> //abs()
 #include <errno.h> //strerror
+#include <string.h>//strerror
 extern int errno;
 int main(){
   printf("I am %d and my parent is %d\n",getpid(), getppid());
